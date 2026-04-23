@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>OP Strategy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>.setmargin {margin-top:5px; margin-bottom:5px;}
+    .lm4 {margin-left:4%;}
+    .lm2 {margin-left:2%;}
+    .mySlides {display:none;}
+</style>
+<body>
+
+  
+<div class="w3-bar w3-red">
+  <a href="index.html" class="w3-bar-item w3-button">Day Trader</a>
+  <a href="Life Principles.html" class="w3-bar-item w3-button w3-hide-small">Life Principles</a>  
+  <a href="Trade Entry.html" class="w3-bar-item w3-button w3-hide-small">Trade Entry</a>
+   <a href="setup.html" class="w3-bar-item w3-button w3-hide-small">Setup</a>
+   <a href="entry patterns.html" class="w3-bar-item w3-button w3-hide-small">Entry Patterns</a>
+    <a href="day routine.html" class="w3-bar-item w3-button w3-hide-small">Day Routine</a>
+    <a href="op setup.html" class="w3-bar-item w3-button w3-hide-small">OP Setup</a>
+    <a href="op strategy.html" class="w3-bar-item w3-button w3-hide-small  w3-green">OP Strategy</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+  <a href="Life Principles.html" class="w3-bar-item w3-button">Life Principles</a>  
+  <a href="Trade Entry.html" class="w3-bar-item w3-button">Life Principles</a> 
+   <a href="setup.html" class="w3-bar-item w3-button">Setup</a> 
+   <a href="entry patterns.html" class="w3-bar-item w3-button">Entry Patterns</a> 
+   <a href="day routine.html" class="w3-bar-item w3-button">Day Routine</a> 
+   <a href="op setup.html" class="w3-bar-item w3-button">OP Setup</a> 
+       <a href="op strategy.html" class="w3-bar-item w3-button  w3-green">OP Strategy</a> 
+</div>
+
+<div class="w3-container w3-light-blue">
+    <div class="w3-panel w3-pale-green">
+        <h2>Options Charts</h2>         
+  </div>    
+</div>
+
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\premium-apr\op apr 01.png" style="width:100%">
+  <img class="mySlides" src="images\spot\spot 02.png" style="width:100%">
+  <img class="mySlides" src="images\spot\spot 03.png" style="width:100%">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
